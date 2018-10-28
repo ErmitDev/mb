@@ -1,0 +1,123 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "DroidSerif";
+    src: url("/assets/fonts/DroidSerif-Regular.ttf");
+}
+@font-face {
+    font-family: "DroidSerif";
+    src: url("/assets/fonts/DroidSerif-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "DroidSerif";
+    src: url("/assets/fonts/DroidSerif-Italic.ttf");
+    font-style: italic;
+}
+@font-face {
+    font-family: "DroidSerif";
+    src: url("/assets/fonts/DroidSerif-BoldItalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Slim-Joe";
+    src: url("/assets/fonts/Slim-Joe.woff");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Verlag-Book";
+    src: url("/assets/fonts/Verlag-Book.woff");
+}
+@font-face {
+    font-family: "Verlag-Book";
+    src: url("/assets/fonts/Verlag-Bold.woff");
+    font-weight: bold;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .navbar, .brand, .btn-simple, a, .td-name, td {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Verlag-Book","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+h1, .h1 {
+  font-size: 3em;
+  line-height: 1.213483146em;
+  font-weight: bold;
+}
+h2, .h2 {
+  font-size: 2em;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  margin: 0.4em 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+h3, .h3 {
+  font-size: 1.619047619em;
+  line-height: 1.058823529em;
+  margin-top: 1.05882353em;
+  margin-bottom: 1.05882353em;
+}
+h4, .h4 {
+  font-size: 1.125em;
+  line-height: 1.714285714em;
+}
+h5 {
+  font-size: 1.2em;
+}
+p {
+  font-size: 1em;
+  line-height: 1.4737;
+  font-weight: 400;
+  margin: 0 0 .75em;
+}
+.btn {
+    border-radius: 2px;
+    border-width: 1px;
+    font-family: "Verlag-Book","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    line-height: 1;
+    cursor: pointer;
+}
+.btn-lg {
+    font-size: 18px;
+    border-radius: 6px;
+    padding: 14px 30px;
+    font-weight: 400;
+}
+.color-white{
+	color:#FFFFFF;
+}
+.text-gray{
+  color:#777777;
+}
+.wrapper {
+  overflow: hidden;
+  -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  -o-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  -ms-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+}
+.navbar .container-flex .navbar-toggle{
+  -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  -o-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  -ms-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+}
+.nav-open .navbar .container-flex .navbar-toggle{
+  -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  -o-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  -ms-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+
+  -webkit-transform: translate3d(-300px, 0, 0);
+  -moz-transform: translate3d(-300px, 0, 0);
+  -o-transform: translate3d(-300px, 0, 0);
+  -ms-transform: translate3d(-300px, 0, 0);
+  transform: translate3d(-300px, 0, 0);
+}
+
+
