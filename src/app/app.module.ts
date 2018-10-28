@@ -10,6 +10,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AppComponent } from './app.component';
 import { SharedService } from './shared.service';
+import { MenuComponent } from './menu/menu.component';
+import { FirstPanelComponent } from './first-panel/first-panel.component';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -17,7 +19,9 @@ export function createTranslateLoader(http: HttpClient) {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MenuComponent,
+    FirstPanelComponent
   ],
   imports: [
     BrowserModule,

@@ -9,9 +9,7 @@ import { SharedService } from './shared.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent{
-  company : String;
   constructor(){
-    this.company = "Marc Brulard";
   }
 
   ngOnInit() {
