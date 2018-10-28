@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { SharedService } from './shared.service';
 import { MenuComponent } from './menu/menu.component';
 import { FirstPanelComponent } from './first-panel/first-panel.component';
+import { TopBarComponent } from './top-bar/top-bar.component';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -21,7 +22,8 @@ export function createTranslateLoader(http: HttpClient) {
   declarations: [
     AppComponent,
     MenuComponent,
-    FirstPanelComponent
+    FirstPanelComponent,
+    TopBarComponent
   ],
   imports: [
     BrowserModule,
