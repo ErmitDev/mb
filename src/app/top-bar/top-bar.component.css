@@ -75,6 +75,7 @@
   
   .navbar .toggled .bar1 {
     top: 6px;
+    background-color: #647077;
     -webkit-animation: topbar-x 500ms linear 0s;
     -moz-animation: topbar-x 500ms linear 0s;
     animation: topbar-x 500ms 0s;
@@ -86,7 +87,8 @@
     opacity: 0;
   }
   .navbar .toggled .bar3 {
-    bottom: 6px;
+    bottom: 6px;    
+    background-color: #647077;
     -webkit-animation: bottombar-x 500ms linear 0s;
     -moz-animation: bottombar-x 500ms linear 0s;
     animation: bottombar-x 500ms 0s;

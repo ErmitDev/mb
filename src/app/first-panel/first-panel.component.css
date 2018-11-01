@@ -1,6 +1,23 @@
-.main-container{
-    background-color: #08151c;
+.firstpanel-container{    
     color: white;
-    height: 500px;
+    background-color: #08151d;
+    height: 101vh;
     width: 100%;
+}
+
+.firstpanel-container .image-container{
+    margin-top: 15vh; 
+    max-width: 60vw;
+}
+
+.firstpanel-container img{
+    max-width: 100%;
+}
+
+.firstpanel-container .description{
+    margin-top: 50vh; 
+}
+
+.firstpanel-container .carousel-container{
+    margin-left: -16vw;
 }

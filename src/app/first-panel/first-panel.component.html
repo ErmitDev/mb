@@ -1,3 +1,23 @@
-<div class="main-container">
-  <h1>{{company}}</h1> Test JS App
+<div class="firstpanel-container">  
+  <div class="d-flex justify-content-center">
+      <div class="p-5 description" >
+          <h3 style="font-weight: bold">Canyon corridor</h3>
+          <a>View shoot</a>
+      </div>    
+      <div class="flex-grow-1">  
+        <div class="carousel-container">
+          <div class="d-flex justify-content-center">          
+            <div class="align-self-center p-3 pointer" (click)="previousPhoto()">
+              <i class="fas fa-angle-left"></i>
+            </div>
+            <div class="image-container">              
+              <img src="{{getPathPhoto()}}"/>
+            </div>
+            <div class="align-self-center p-3 pointer" (click)="nextPhoto()">
+              <i class="fas fa-angle-right"></i>
+            </div>
+          </div>
+        </div>        
+      </div>
+  </div>
 </div>

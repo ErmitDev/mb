@@ -29,6 +29,7 @@
     "angular-inport": "^1.0.2",
     "core-js": "^2.4.1",
     "ng2-scroll-to-el": "^1.0.0",
+    "ngx-siema": "^2.0.1",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {

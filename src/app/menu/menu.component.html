@@ -1,3 +1,63 @@
-<p>
-  menu works! {{menuOpen}}
-</p>
+<div class="menu-container" [@menuTrigger]="menuTrigger()">
+  <div class="menu-content">
+
+    <div class="column w-16">
+      <div class="column-header">
+        Collections
+      </div>
+      <div class="column-body">
+        <ul>
+          <li>
+            <a>Overview</a>
+          </li>
+          <li>
+            <a>Landscape</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="column-header">
+        Shoots
+      </div>
+      <div class="column-body">
+        <ul>
+          <li>
+            <a>Bike</a>
+          </li>
+          <li>
+            <a>Moutain</a>
+          </li>
+          <li>
+            <a>Flower</a>
+          </li>
+          <li>
+            <a>Cul</a>
+          </li>
+          <li>
+            <a>Origami</a>
+          </li>
+          <li>
+            <a>Gateau</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="column w-25">
+      <div class="column-header">
+        Film
+      </div>
+      <div class="column-body">
+        <ul>
+          <li>
+            <a>To be Alpinist</a>
+          </li>          
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+

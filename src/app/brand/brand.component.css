@@ -1,0 +1,11 @@
+.brand-container{
+    background-color: transparent;
+    color: white;
+    position: fixed;
+    top: 5vh;
+    left: 30px;
+}
+
+.brand-container img{
+    height:25vh;
+}

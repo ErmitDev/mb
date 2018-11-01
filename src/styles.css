@@ -55,8 +55,6 @@ h2, .h2 {
 h3, .h3 {
   font-size: 1.619047619em;
   line-height: 1.058823529em;
-  margin-top: 1.05882353em;
-  margin-bottom: 1.05882353em;
 }
 h4, .h4 {
   font-size: 1.125em;
@@ -70,6 +68,14 @@ p {
   line-height: 1.4737;
   font-weight: 400;
   margin: 0 0 .75em;
+}
+a{
+    font-weight: 600;
+    line-height: 1.71;
+    color: #fff;
+    cursor: none;
+    outline: 0;
+    text-decoration: none;
 }
 .btn {
     border-radius: 2px;
@@ -85,39 +91,8 @@ p {
     padding: 14px 30px;
     font-weight: 400;
 }
-.color-white{
-	color:#FFFFFF;
-}
-.text-gray{
-  color:#777777;
-}
-.wrapper {
-  overflow: hidden;
-  -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-  -moz-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-  -o-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-  -ms-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-  transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-}
-.navbar .container-flex .navbar-toggle{
-  -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-  -moz-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-  -o-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-  -ms-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-  transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-}
-.nav-open .navbar .container-flex .navbar-toggle{
-  -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-  -moz-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-  -o-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-  -ms-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-  transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-
-  -webkit-transform: translate3d(-300px, 0, 0);
-  -moz-transform: translate3d(-300px, 0, 0);
-  -o-transform: translate3d(-300px, 0, 0);
-  -ms-transform: translate3d(-300px, 0, 0);
-  transform: translate3d(-300px, 0, 0);
+.pointer{
+    cursor: pointer;
 }
 
 
