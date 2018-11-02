@@ -37,9 +37,9 @@
 }
 
 .column-header{
-    font-family: Verlag-Book;
+    font-family: GT-America,sans-serif;
     color:#647077;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     letter-spacing: .06em;
     text-transform: uppercase;
 }
@@ -82,12 +82,54 @@
 }
 
 .column li a{
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 2rem;
     color: #1d2a32;
-    font-family: DroidSerif,sans-serif;
+    font-family: GT-America,sans-serif;
     letter-spacing: -.06rem;
     display: inline-block;
     padding-top: 1.1rem;
     cursor: pointer;
 }
+
+.menu-footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 1rem;
+    font-family: GT-America,sans-serif;
+}
+
+.menu-footer a{
+    padding-top: 0;
+    color: #647077;
+
+    font-weight: 600;
+    line-height: 1.71;
+    position: relative;
+
+    outline: 0;
+    text-decoration: none;
+    transition: .36s cubic-bezier(.74,-.01,.75,.42);
+}
+.menu-footer .text-part{
+    text-align: center;
+}
+
+.menu-footer .text-part a{
+    margin-left: 1rem;
+}
+
+.menu-footer .icon-part{
+    font-size: 1.6rem;    
+    letter-spacing: 0.5rem;
+}
+
+.menu-footer .line{
+    content: "";
+    height: 0.05rem;
+    background-color: #647077;
+    opacity: .2;
+}
+
