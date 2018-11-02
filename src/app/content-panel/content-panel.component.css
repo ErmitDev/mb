@@ -1,5 +1,21 @@
-.contentpanel-container{
+.contentpanel{
     background-color: white;    
     color: #1d2a32;
-    height: 100vh;
+    width: 75%;
+}
+
+.description{
+    color: #6c6c6c;
+}
+
+.row-spacing{
+    margin-top:5vh;
+}
+
+.row-height{
+    height: 60vh;
+}
+
+.title{
+    text-align: center;
 }

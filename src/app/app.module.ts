@@ -15,6 +15,7 @@ import { FirstPanelComponent } from './first-panel/first-panel.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ContentPanelComponent } from './content-panel/content-panel.component';
 import { BrandComponent } from './brand/brand.component';
+import { IntroComponent } from './intro/intro.component';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -27,7 +28,8 @@ export function createTranslateLoader(http: HttpClient) {
     FirstPanelComponent,
     TopBarComponent,
     ContentPanelComponent,
-    BrandComponent
+    BrandComponent,
+    IntroComponent
   ],
   imports: [
     BrowserModule,
