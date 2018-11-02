@@ -69,11 +69,10 @@ p {
   font-weight: 400;
   margin: 0 0 .75em;
 }
-a{
+a {
     font-weight: 600;
     line-height: 1.71;
-    color: #fff;
-    cursor: none;
+    cursor: pointer;
     outline: 0;
     text-decoration: none;
 }

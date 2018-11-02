@@ -1,3 +1,4 @@
 <div class="brand-container">
-    <img src="/assets/images/MarcBrulardSiteBlanc.png"/>
+    <img *ngIf="isOnDarkScreen" src="/assets/images/MarcBrulardSiteBlanc.png"/>
+    <img *ngIf="!isOnDarkScreen" src="/assets/images/MarcBrulardSiteBleu.png"/>
 </div>

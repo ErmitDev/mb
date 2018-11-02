@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from '../shared.service';
 
 @Component({
   selector: 'app-brand',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BrandComponent implements OnInit {
 
-  constructor() { }
+  ss: SharedService;
+  isOnDarkScreen: Boolean;
+  subscription : null;
+
+  constructor(ss: SharedService) {
+    this.ss = ss; 
+    this.isOnDarkScreen = true;
+   }
 
   ngOnInit() {
+    this.subscription = this.ss.getIsOnDarkScreen()
+      .subscribe(item => this.isOnDarkScreen=item);
   }
 
 }
