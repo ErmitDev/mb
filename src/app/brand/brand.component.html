@@ -1,4 +1,6 @@
 <div class="brand-container">
-    <img *ngIf="isOnDarkScreen && !menuOpen" src="/assets/images/MarcBrulardSiteBlanc.png"/>
-    <img *ngIf="!isOnDarkScreen || menuOpen" src="/assets/images/MarcBrulardSiteBleu.png"/>
+    <a href="/home">
+        <img *ngIf="isOnDarkScreen && !menuOpen" src="/assets/images/MarcBrulardSiteBlanc.png"/>
+        <img *ngIf="!isOnDarkScreen || menuOpen" src="/assets/images/MarcBrulardSiteBleu.png"/>
+    </a>    
 </div>

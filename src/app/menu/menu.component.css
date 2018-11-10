@@ -2,7 +2,7 @@
     z-index: 10;
     background-color: white;
     color: black;
-    height: 100vh;
+    min-height: 100vh;
     padding: 0 4.8rem;
     position: fixed;  
     left: 0;
@@ -11,29 +11,18 @@
     bottom: 10rem;
 }
 
-.menu-content{
-    position: absolute;
-    left: 0;
-    top: 60px;
-    right: 0;
-    bottom: 10rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 0;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-left: 12.5%;
-    width: 75%;
+@media only screen and (max-width: 1000px) {
+    .menu-container {
+        overflow-y: scroll;
+    }
+}
 
-    display: flex;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+.menu-content{
+    min-height: 90vh;
+    background-image: url(/assets/images/photos/IceTunnel-0.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .column-header{
@@ -44,23 +33,13 @@
     text-transform: uppercase;
 }
 
-.column{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    text-align: left;
+.column-header a{
+    color:#647077;
+    text-decoration: none;
 }
 
-.column-collections{
-    width: 16%;
-}
 
-.column-film{
-    width: 25%;
-}
-
-.column ul{
+.menu-container ul{
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -70,18 +49,13 @@
     padding: 0;
 }
 
-.column:nth-child(2) ul{
-    -ms-flex-direction: row;
-    flex-direction: row;    
-}
-
-.column li{
+.menu-container li{
     display: inline-table;
     float: left;
     width: 50%;
 }
 
-.column li a{
+.menu-container li a{
     font-size: 1.1rem;
     line-height: 2rem;
     color: #1d2a32;
@@ -93,10 +67,6 @@
 }
 
 .menu-footer{
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
     font-size: 1rem;
     font-family: GT-America,sans-serif;
 }
@@ -113,23 +83,17 @@
     text-decoration: none;
     transition: .36s cubic-bezier(.74,-.01,.75,.42);
 }
-.menu-footer .text-part{
-    text-align: center;
-}
 
-.menu-footer .text-part a{
-    margin-left: 1rem;
-}
 
 .menu-footer .icon-part{
     font-size: 1.6rem;    
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.4rem;
 }
 
 .menu-footer .line{
     content: "";
-    height: 0.1rem;
+    height: 2px;
     background-color: #647077;
-    opacity: .2;
+    opacity: .4;
 }
 
