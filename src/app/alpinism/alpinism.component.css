@@ -1,0 +1,15 @@
+.intro{
+    background-color: #08151d;
+    height: 101vh;
+    padding: 0;
+}
+
+.video-height{
+    height: 60vh;
+}
+
+.description{
+    color: #6c6c6c;
+    text-align: justify;
+    text-indent: 20px;
+}

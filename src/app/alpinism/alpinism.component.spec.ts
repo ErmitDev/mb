@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FirstPanelComponent } from './first-panel.component';
+import { AlpinismComponent } from './alpinism.component';
 
-describe('FirstPanelComponent', () => {
-  let component: FirstPanelComponent;
-  let fixture: ComponentFixture<FirstPanelComponent>;
+describe('AlpinismComponent', () => {
+  let component: AlpinismComponent;
+  let fixture: ComponentFixture<AlpinismComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FirstPanelComponent ]
+      declarations: [ AlpinismComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FirstPanelComponent);
+    fixture = TestBed.createComponent(AlpinismComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

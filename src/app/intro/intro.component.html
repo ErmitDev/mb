@@ -1,5 +1,72 @@
 <div class="container-fluid intro" 
     in-view (inview)="isDarkScreen($event)"  
+    [offset]="[0, 0, -50, 0]">
+
+    <video class="video" autoplay loop>
+        <source src="/assets/images/video/BandeauAccueil1280x500.mp4" type="video/mp4">
+    </video>
+
+    <div class="arrow-d" *ngIf="!isOnLightScreen">    
+        <a [scrollTo]="'#apercu'" [scrollDuration]="700">
+            <i class="fas fa-arrow-down"></i>
+        </a>    
+    </div>
+</div>
+
+<div class="container-fluid contentpanel" id="apercu"
+    in-view (inview)="isLightScreen($event)"  
     [offset]="[0, 0, 0, 0]">
+
+    <div class="row text-center">
+        <!-- ||||||||||||||||| -->
+        <div class="col-1"></div>
+        <div class="col-4 transition-easeout opacity-0" [ngClass]="{'opacity-1': rowInView[0]}"
+                in-view (inview)="animateRow($event, 0)">
+            <a  class="d-block my-4 h-100">
+                <img class="img-fluid" src="/assets/images/photos/CanyonUnderTree.jpg"> 
+            </a>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-4 align-self-center transition-easeout transition-delay opacity-0" [ngClass]="{'opacity-1': rowInView[0]}">
+            <p class="description">
+                <i class="fas fa-quote-left"></i> Vidéaste et Photographe freelance installé dans les Alpes-Maritimes, je réalise tout type de vidéo. Mon domaine de compétence couvrant l'ensemble du processus de réalisation, j'accompagne mes clients depuis la définition de leur projet de vidéo jusqu'à sa publication.  <i class="fas fa-quote-right"></i>
+            </p>
+        </div>
+        <!-- ||||||||||||||||| -->
+        <div class="col-6 align-self-start midline-height transition-easeout opacity-0"  
+                [ngClass]="{'opacity-1': rowInView[1]}"
+                in-view (inview)="animateRow($event, 1)">
+            <a  class="d-block my-4 h-100">
+                <img class="img-fluid" src="/assets/images/photos/Bivouac.jpg"> 
+            </a>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-4 align-self-end transition-easeout transition-delay opacity-0" 
+                [ngClass]="{'opacity-1': rowInView[1]}">
+            <a  class="d-block my-4 h-100">
+                <img class="img-fluid" src="/assets/images/photos/Ecrins.jpg"> 
+            </a>
+        </div>         
+        <div class="col-1"></div>
+        <!-- ||||||||||||||||| -->
+        <div class="col-1"></div>
+        <div class="col-10 align-self-center transition-easeout opacity-0"
+                [ngClass]="{'opacity-1': rowInView[2]}"
+                in-view (inview)="animateRow($event, 2)">
+            <p class="description">
+                <i class="fas fa-quote-left"></i> J'accorde une attention particulière à la compréhension du besoin, ce qui me permet d'être parfaitement en ligne avec l'attendu, dès la prise de vue et le montage. <i class="fas fa-quote-right"></i>
+            </p>
+        </div>        
+        <div class="col-1"></div>
+        <!-- ||||||||||||||||| -->
+        <div class="col-12 transition-easeout opacity-0"
+                [ngClass]="{'opacity-1': rowInView[3]}"
+                in-view (inview)="animateRow($event, 3)">
+            <a  class="d-block my-4 h-100">
+                <img class="img-fluid" src="/assets/images/photos/Landmannalaugar.jpg"> 
+            </a>
+        </div> 
+        <!-- ||||||||||||||||| -->
+    </div>
 
 </div>

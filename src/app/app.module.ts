@@ -8,15 +8,19 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
+import { Router } from '@angular/router';
+import { AppRoutingModule }        from './app-routing.module';
+import { ScrollToModule } from 'ng2-scroll-to-el';
+
 import { AppComponent } from './app.component';
 import { SharedService } from './shared.service';
 import { MenuComponent } from './menu/menu.component';
-import { FirstPanelComponent } from './first-panel/first-panel.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { ContentPanelComponent } from './content-panel/content-panel.component';
 import { BrandComponent } from './brand/brand.component';
 import { IntroComponent } from './intro/intro.component';
 import { FooterComponent } from './footer/footer.component';
+import { BiographyComponent } from './biography/biography.component';
+import { AlpinismComponent } from './alpinism/alpinism.component';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -26,27 +30,33 @@ export function createTranslateLoader(http: HttpClient) {
   declarations: [
     AppComponent,
     MenuComponent,
-    FirstPanelComponent,
     TopBarComponent,
-    ContentPanelComponent,
     BrandComponent,
     IntroComponent,
-    FooterComponent
+    FooterComponent,
+    BiographyComponent,
+    AlpinismComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     NgInviewModule,
     NgbModule.forRoot(),
+    ScrollToModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
         useFactory: (createTranslateLoader),
         deps: [HttpClient]
       }
-    })
+    }), 
+    AppRoutingModule
   ],
   providers: [SharedService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(router: Router) {
+
+  }
+}

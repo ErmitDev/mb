@@ -1,0 +1,26 @@
+.biography{
+    background-color: #08151d;
+    min-height: 100vh;
+    padding: 0;
+    color: white;
+}
+
+.text-bio{
+    text-indent: 25px;
+    text-align: justify;
+}
+
+.animation-1{
+    -webkit-animation: FadeIn 0.5s ease-out 1 normal forwards;
+    -moz-animation:    FadeIn 0.5s ease-out 1 normal forwards;
+    -o-animation:      FadeIn 0.5s ease-out 1 normal forwards; 
+    animation:         FadeIn 0.5s ease-out 1 normal forwards; 
+}
+
+.animation-2{
+    -webkit-animation: FadeIn 1.5s ease-out 1 normal forwards;
+    -moz-animation:    FadeIn 1.5s ease-out 1 normal forwards;
+    -o-animation:      FadeIn 1.5s ease-out 1 normal forwards; 
+    animation:         FadeIn 1.5s ease-out 1 normal forwards; 
+}
+

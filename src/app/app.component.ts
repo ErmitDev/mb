@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { RouterOutlet } from '@angular/router';
 
-import { SharedService } from './shared.service';
 
 @Component({
   selector: 'app-root',

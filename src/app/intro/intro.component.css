@@ -1,4 +1,23 @@
 .intro{
     background-color: #08151d;
     height: 101vh;
+    padding: 0;
+}
+
+.contentpanel{
+    background-color: white;    
+    color: #1d2a32;
+    width: 75%;
+    margin-top: 10vh; 
+    margin-bottom: 10vh;
+}
+
+.description{
+    color: #6c6c6c;
+    text-align: justify;
+    text-indent: 25px;
+}
+
+.midline-height{
+    height: 40vh;
 }
