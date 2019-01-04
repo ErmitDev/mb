@@ -21,6 +21,7 @@ import { IntroComponent } from './intro/intro.component';
 import { FooterComponent } from './footer/footer.component';
 import { BiographyComponent } from './biography/biography.component';
 import { AlpinismComponent } from './alpinism/alpinism.component';
+import { StpetersbourgComponent } from './stpetersbourg/stpetersbourg.component';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -35,7 +36,8 @@ export function createTranslateLoader(http: HttpClient) {
     IntroComponent,
     FooterComponent,
     BiographyComponent,
-    AlpinismComponent
+    AlpinismComponent,
+    StpetersbourgComponent
   ],
   imports: [
     BrowserModule,

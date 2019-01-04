@@ -1,0 +1,51 @@
+<div class="container-fluid intro"
+    in-view (inview)="isDarkScreen($event)"  
+    [offset]="[0, 0, -50, 0]">
+
+    <video class="video" muted autoplay loop playsinline>
+        <source src="/assets/images/video/BandeauAlpi1280x500.mp4" type="video/mp4">
+    </video>
+
+    <div class="arrow-d" *ngIf="!isOnLightScreen">    
+        <a [scrollTo]="'#apercu'" [scrollDuration]="700">
+            <i class="fas fa-arrow-down"></i>
+        </a>    
+    </div> 
+</div>
+
+<div class="container-fluid" id="apercu"
+    in-view (inview)="isLightScreen($event)"  
+    [offset]="[0, 0, 0, 0]">
+    <div class="row text-center mt-5">        
+        <!-- ||||||||||||||||| -->
+        <div class="col-md-1"></div>
+        <div class="col-md-4 align-self-center text-center description transition-easeout opacity-0" 
+              [ngClass]="{'opacity-1': rowInView[0]}"
+              in-view (inview)="animateRow($event, 0)">
+            Saint-Pétersbourg, deuxième plus grande ville Russe à la porte de l'Europe, en est également un des ports principaux. Elle fut la capitale de l'empire Russe jusqu'en 1917 et est aujourd'hui un joyau du patrimoine culturel et architectural du pays.
+            
+        </div>
+        <div class="col-md-5">
+            <a class="d-block my-4 h-100 transition-easeout transition-delay opacity-0" 
+                  [ngClass]="{'opacity-1': rowInView[0]}">
+                <img class="img-fluid" src="/assets/images/photos/StPetRiver.jpg"> 
+            </a>
+        </div>
+        <div class="col-md-2"></div>   
+      <!-- ||||||||||||||||| -->
+      <div class="col-md-3"></div>
+      <div class="col-md-6 mt-3 mb-5 transition-easeout transition-delay opacity-0" [ngClass]="{'opacity-1': rowInView[0]}">
+          <iframe 
+            class="video video-height"
+            src="https://www.youtube.com/embed/ZrGze_sTuhw" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+      </div>
+      <div class="col-2"></div>
+      <!-- ||||||||||||||||| -->
+    </div>
+</div>
+
+
