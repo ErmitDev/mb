@@ -1,0 +1,81 @@
+<div class="container-fluid intro"
+    in-view (inview)="isDarkScreen($event)"  
+    [offset]="[0, 0, -50, 0]">
+
+    <video class="video" muted autoplay loop playsinline>
+        <source src="/assets/images/video/BandeauNorway.mp4" type="video/mp4">
+    </video>
+
+    <div class="arrow-d" *ngIf="!isOnLightScreen">    
+        <a [scrollTo]="'#apercu'" [scrollDuration]="700">
+            <i class="fas fa-arrow-down"></i>
+        </a>    
+    </div> 
+</div>
+
+<div class="container-fluid" id="apercu"
+    in-view (inview)="isLightScreen($event)"  
+    [offset]="[0, 0, 0, 0]">
+    <div class="row text-center mt-5">        
+        <!-- ||||||||||||||||| -->
+        <div class="col-md-4"></div>
+        <div class="col-md-4 align-self-center text-center description transition-easeout opacity-0" 
+              [ngClass]="{'opacity-1': rowInView[0]}"
+              in-view (inview)="animateRow($event, 0)">
+            Pays proche de la nature par excellence, la Norvège se distingue par ses paysages uniques. Visiter ce pays, c'est en prendre plein les yeux à tous les coups ! Cette vidéo présente des images d'Oslo, la capitale, et de Bergen et ses magnifiques fjords.
+        </div> 
+
+                        <div class="col-md-12">
+            <a class="d-block my-4 h-100 transition-easeout opacity-0" 
+            [ngClass]="{'opacity-1': rowInView[0]}"
+            in-view (inview)="animateRow($event, 0)">
+                <img class="img-fluid" src="/assets/images/photos/NorwayBergen.jpg"> 
+            </a>
+        </div>
+
+        <div class="col-md-1"></div>
+                <div class="col-md-2">
+            <a class="d-block my-4 h-100 transition-easeout opacity-0" 
+            [ngClass]="{'opacity-1': rowInView[1]}"
+            in-view (inview)="animateRow($event, 1)">
+                <img class="img-fluid" src="/assets/images/photos/NorwayCascade.jpg"> 
+            </a>
+        </div>
+
+                <div class="col-md-8">
+            <a class="d-block my-4 h-100 transition-easeout opacity-0" 
+            [ngClass]="{'opacity-1': rowInView[1]}"
+            in-view (inview)="animateRow($event, 1)">
+                <img class="img-fluid" src="/assets/images/photos/NorwayFjord.jpg"> 
+            </a>
+        </div>
+                <div class="col-md-1"></div>
+
+                        <div class="col-md-12">
+            <a class="d-block my-4 h-100 transition-easeout opacity-0" 
+            [ngClass]="{'opacity-1': rowInView[2]}"
+            in-view (inview)="animateRow($event, 2)">
+                <img class="img-fluid" src="/assets/images/photos/NorwaySnow.jpg"> 
+            </a>
+        </div>
+
+
+      <!-- ||||||||||||||||| -->
+
+        <div class="col-md-1"></div>
+  <div class="col-md-10 mt-10 mb-10 transition-easeout transition-delay opacity-0" [ngClass]="{'opacity-1': rowInView[1]}">
+          <iframe 
+            class="video video-height"
+            src="https://www.youtube.com/embed/CbNwIQ6Zcg4" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+      </div>
+
+      <!-- ||||||||||||||||| -->
+
+
+    </div>
+</div>
+

@@ -22,6 +22,7 @@ import { FooterComponent } from './footer/footer.component';
 import { BiographyComponent } from './biography/biography.component';
 import { AlpinismComponent } from './alpinism/alpinism.component';
 import { StpetersbourgComponent } from './stpetersbourg/stpetersbourg.component';
+import { NorwayComponent } from './norway/norway.component';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -37,7 +38,8 @@ export function createTranslateLoader(http: HttpClient) {
     FooterComponent,
     BiographyComponent,
     AlpinismComponent,
-    StpetersbourgComponent
+    StpetersbourgComponent,
+    NorwayComponent
   ],
   imports: [
     BrowserModule,

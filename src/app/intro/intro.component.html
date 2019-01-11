@@ -28,7 +28,7 @@
                 <img class="img-fluid" src="/assets/images/photos/CanyonUnderTree.jpg"> 
             </a>
         </div>
-        <div class="col-md-1"></div>
+
         <div class="col-md-6 align-self-center transition-easeout transition-delay opacity-0" [ngClass]="{'opacity-1': rowInView[0]}">
             <p class="description">
                 <i class="fas fa-quote-left"></i> 
@@ -39,33 +39,26 @@
             </p>
         </div>
         <!-- ||||||||||||||||| -->
-        <div class="col-md-6 align-self-start midline-height transition-easeout opacity-0"  
+        <div class="col-md-6 align-self-start  transition-easeout opacity-0"  
                 [ngClass]="{'opacity-1': rowInView[1]}"
                 in-view (inview)="animateRow($event, 1)">
-            <a  class="d-block my-4 h-100">
+            <a  class="d-block my-6 h-100">
                 <img class="img-fluid" src="/assets/images/photos/Bivouac.jpg"> 
             </a>
         </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-4 align-self-end transition-easeout transition-delay opacity-0" 
-                [ngClass]="{'opacity-1': rowInView[1]}">
-            <a  class="d-block my-4 h-100">
+
+                <div class="col-md-6 align-self-start transition-easeout opacity-0"  
+                [ngClass]="{'opacity-1': rowInView[1]}"
+                in-view (inview)="animateRow($event, 1)">
+            <a  class="d-block my-6 h-100">
                 <img class="img-fluid" src="/assets/images/photos/Ecrins.jpg"> 
             </a>
-        </div>         
-        <div class="col-md-1"></div>
-        <!-- ||||||||||||||||| -->
-        <div class="col-md-1"></div>
-        <div class="col-md-10 align-self-center transition-easeout opacity-0"
+        </div>
+
+
+        <div class="col-md-12 transition-easeout opacity-0"
                 [ngClass]="{'opacity-1': rowInView[2]}"
                 in-view (inview)="animateRow($event, 2)">
-      
-        </div>        
-        <div class="col-md-1"></div>
-        <!-- ||||||||||||||||| -->
-        <div class="col-md-12 transition-easeout opacity-0"
-                [ngClass]="{'opacity-1': rowInView[3]}"
-                in-view (inview)="animateRow($event, 3)">
             <a  class="d-block my-4 h-100">
                 <img class="img-fluid" src="/assets/images/photos/Landmannalaugar.jpg"> 
             </a>
