@@ -19,21 +19,57 @@
     in-view (inview)="isLightScreen($event)"  
     [offset]="[0, 0, 0, 0]">
 
+
     <div class="row text-center">
+
+        <div class="col-md-2">
+            <a class="d-block my-2 h-100" >
+                <img class="img-fluid" src="/assets/images/LogoCamera.png"> 
+            </a>
+        </div>
+        <div class="col-md-9 align-self-center description" 
+        [ngClass]="{'opacity-1': rowInView[0]}">
+            <span style="font-weight:bold;">
+            Réalisateur de vidéo sur mesure
+                     </span>
+                <p>Vidéaste et Photographe freelance installé dans les Alpes-Maritimes, je réalise tout type de vidéo (Evénement, promotion d'un lieu, une activité ou un produit, corporate, clip...). Mon domaine de compétence couvrant l'ensemble du processus de réalisation, j'accompagne mes clients depuis la définition de leur projet de vidéo jusqu'à sa publication. J'accorde une attention particulière à la compréhension du besoin, ce qui me permet d'être parfaitement en ligne avec l'attendu, dès la prise de vue et le montage.</p>
+        </div>
+        <div class="col-md-1"></div>
+
+
+
+        <div class="col-md-9 align-self-center description" 
+        [ngClass]="{'opacity-1': rowInView[0]}">
+            <b>Prises de vue aériennes par drone
+            </b>
+                <p>
+                <i>Télépilote de drone enregistré auprès de la Direction Générale de l'Aviation Civile.</i>
+                </p>
+                Je réalise les photos et vidéos aériennes correspondant à vôtre besoin, avec le post-traitement vous assurant le meilleur rendu visuel possible.
+                
+        </div>
+                        <div class="col-md-2">
+            <a class="d-block my-2 h-100" >
+                <img class="img-fluid" src="/assets/images/LogoDrone.png"> 
+            </a>
+        </div>
+        <div class="col-md-1"></div>
+
+
+
         <!-- ||||||||||||||||| -->
         <div class="col-md-1"></div>
-        <div class="col-md-4 transition-easeout opacity-0" [ngClass]="{'opacity-1': rowInView[0]}"
+        <div class="col-md-4" [ngClass]="{'opacity-1': rowInView[0]}"
                 in-view (inview)="animateRow($event, 0)">
             <a  class="d-block my-4 h-100">
                 <img class="img-fluid" src="/assets/images/photos/CanyonUnderTree.jpg"> 
             </a>
         </div>
 
-        <div class="col-md-6 align-self-center transition-easeout transition-delay opacity-0" [ngClass]="{'opacity-1': rowInView[0]}">
+        <div class="col-md-6 align-self-center" 
+        [ngClass]="{'opacity-1': rowInView[0]}">
             <p class="description">
-                <i class="fas fa-quote-left"></i> 
-                Vidéaste et Photographe freelance installé dans les Alpes-Maritimes, je réalise tout type de vidéo. 
-                Mon domaine de compétence couvrant l'ensemble du processus de réalisation, j'accompagne mes clients depuis la définition de leur projet de vidéo jusqu'à sa publication.  
+                <i class="fas fa-quote-left"></i>  
                 J'accorde une attention particulière à la compréhension du besoin, ce qui me permet d'être parfaitement en ligne avec l'attendu, dès la prise de vue et le montage.
                 <i class="fas fa-quote-right"></i>
             </p>

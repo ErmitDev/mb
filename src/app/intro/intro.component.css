@@ -1,14 +1,8 @@
-.intro{
-    background-color: #08151d;
-    height: 101vh;
-    padding: 0;
-}
-
 .contentpanel{
     background-color: white;    
     color: #1d2a32;
     width: 75%;
-    margin-top: 10vh; 
+    margin-top: 3vh; 
     margin-bottom: 10vh;
 }
 
@@ -16,6 +10,13 @@
     color: #6c6c6c;
     text-align: justify;
     text-indent: 25px;
+}
+
+.titre{
+    color: #6c6c6c;
+    text-align: justify;
+    text-indent: 30px;
+    font-weight: bold;
 }
 
 .midline-height{

@@ -16,10 +16,10 @@
 <div class="container-fluid" id="apercu"
     in-view (inview)="isLightScreen($event)"  
     [offset]="[0, 0, 0, 0]">
-    <div class="row text-center mt-5">        
+    <div class="row text-center mt-3">        
         <!-- ||||||||||||||||| -->
-        <div class="col-md-4"></div>
-        <div class="col-md-4 align-self-center text-center description transition-easeout opacity-0" 
+        <div class="col-md-2"></div>
+        <div class="col-md-8 align-self-center text-center description" 
               [ngClass]="{'opacity-1': rowInView[0]}"
               in-view (inview)="animateRow($event, 0)">
             Saint-Pétersbourg, deuxième plus grande ville Russe à la porte de l'Europe, en est également un des ports principaux. Elle fut la capitale de l'empire Russe jusqu'en 1917 et est aujourd'hui un joyau du patrimoine culturel et architectural du pays.
@@ -27,7 +27,7 @@
 
         <div class="col-md-1"></div>
                 <div class="col-md-12">
-            <a class="d-block my-4 h-100 transition-easeout opacity-0" 
+            <a class="d-block my-4 h-100" 
             [ngClass]="{'opacity-1': rowInView[0]}"
             in-view (inview)="animateRow($event, 0)">
                 <img class="img-fluid" src="/assets/images/photos/StPetRiver.jpg"> 

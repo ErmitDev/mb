@@ -16,18 +16,17 @@
 <div class="container-fluid" id="apercu"
     in-view (inview)="isLightScreen($event)"  
     [offset]="[0, 0, 0, 0]">
-    <div class="row text-center mt-5">        
+    <div class="row text-center mt-3">        
         <!-- ||||||||||||||||| -->
-        <div class="col-md-4"></div>
-        <div class="col-md-4 align-self-center text-center description transition-easeout opacity-0" 
-              [ngClass]="{'opacity-1': rowInView[0]}"
+        <div class="col-md-2"></div>
+        <div class="col-md-8 align-self-center text-center description" 
               in-view (inview)="animateRow($event, 0)">
             Pays proche de la nature par excellence, la Norvège se distingue par ses paysages uniques. Visiter ce pays, c'est en prendre plein les yeux à tous les coups ! Cette vidéo présente des images d'Oslo, la capitale, et de Bergen et ses magnifiques fjords.
         </div> 
 
                         <div class="col-md-12">
-            <a class="d-block my-4 h-100 transition-easeout opacity-0" 
-            [ngClass]="{'opacity-1': rowInView[0]}"
+            <a class="d-block my-4 h-100" 
+          
             in-view (inview)="animateRow($event, 0)">
                 <img class="img-fluid" src="/assets/images/photos/NorwayBergen.jpg"> 
             </a>
@@ -63,7 +62,8 @@
       <!-- ||||||||||||||||| -->
 
         <div class="col-md-1"></div>
-  <div class="col-md-10 mt-10 mb-10 transition-easeout transition-delay opacity-0" [ngClass]="{'opacity-1': rowInView[1]}">
+  <div class="col-md-10 mt-10 mb-10 transition-easeout transition-delay opacity-0" 
+            [ngClass]="{'opacity-1': rowInView[2]}">
           <iframe 
             class="video video-height"
             src="https://www.youtube.com/embed/CbNwIQ6Zcg4" 
